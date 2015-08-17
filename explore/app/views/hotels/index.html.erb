@@ -27,14 +27,14 @@
 
 	<body>
 
-	<h1>Wish list</h1>
+	<h1>Hotels</h1>
 
 
 		<h3>Paris</h3>
 		
 			<ul>
 				<% @room.each do |room| %>
-					<li><%= room %></li>
+					<li><%= room.title %> => <%= room.price %></li>
 				<% end %>
 
 				<!-- <li> 

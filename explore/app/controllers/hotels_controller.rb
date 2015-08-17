@@ -1,5 +1,5 @@
 class HotelsController < ApplicationController
 	def index
-		@room = ['first room', 'second room' ]
+		@room = Hotel.all
 	end
 end
